@@ -1,0 +1,6 @@
+public class RetrofitClient {
+
+    public static Object getInstance() {
+        return new Object();
+    }
+}
