@@ -12,3 +12,12 @@ credentials are sent to an API using an external library concept (Retrofit).
 ## Notes
 This is a conceptual implementation focusing on API handling and login logic.
 
+## Test Cases
+Basic test cases are written to validate:
+- Login with valid credentials
+- Validation for empty or null inputs
+- API method invocation on login action
+
+Tests focus on functionality and logic rather than execution.
+
+
