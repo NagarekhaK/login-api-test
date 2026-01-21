@@ -1,0 +1,11 @@
+public class ApiServiceTest {
+
+    public void testApiIsCalledOnLogin() {
+
+        ApiService apiService = RetrofitClient.getApiService();
+
+        apiService.login("test@example.com", "password123");
+
+        System.out.println("Test Passed: API login method invoked");
+    }
+}

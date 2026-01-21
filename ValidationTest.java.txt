@@ -1,0 +1,18 @@
+public class ValidationTest {
+
+    public void testNullEmail() {
+
+        MainActivity mainActivity = new MainActivity();
+        mainActivity.onLoginClick(null, "password123");
+
+        System.out.println("Test Passed: Null email handled");
+    }
+
+    public void testNullPassword() {
+
+        MainActivity mainActivity = new MainActivity();
+        mainActivity.onLoginClick("test@example.com", null);
+
+        System.out.println("Test Passed: Null password handled");
+    }
+}

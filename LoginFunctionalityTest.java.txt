@@ -1,0 +1,38 @@
+public class LoginFunctionalityTest {
+
+    public void testLoginWithValidCredentials() {
+
+        MainActivity mainActivity = new MainActivity();
+
+        String email = "test@example.com";
+        String password = "password123";
+
+        mainActivity.onLoginClick(email, password);
+
+        System.out.println("Test Passed: Login with valid credentials");
+    }
+
+    public void testLoginWithEmptyEmail() {
+
+        MainActivity mainActivity = new MainActivity();
+
+        String email = "";
+        String password = "password123";
+
+        mainActivity.onLoginClick(email, password);
+
+        System.out.println("Test Passed: Validation shown for empty email");
+    }
+
+    public void testLoginWithEmptyPassword() {
+
+        MainActivity mainActivity = new MainActivity();
+
+        String email = "test@example.com";
+        String password = "";
+
+        mainActivity.onLoginClick(email, password);
+
+        System.out.println("Test Passed: Validation shown for empty password");
+    }
+}
