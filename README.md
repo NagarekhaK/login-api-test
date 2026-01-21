@@ -11,3 +11,4 @@ credentials are sent to an API using an external library concept (Retrofit).
 
 ## Notes
 This is a conceptual implementation focusing on API handling and login logic.
+
